@@ -13,7 +13,7 @@ class IntroPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.shopping_cart,
+              Icons.shopping_cart_outlined,
               size: 72,
               color: Theme.of(context).colorScheme.inversePrimary,
             ),

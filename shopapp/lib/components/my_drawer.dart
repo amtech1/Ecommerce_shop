@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopapp/components/my_listtile.dart';
 
 class MyDrawer extends StatelessWidget {
-  const MyDrawer({super.key});
+  const MyDrawer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +13,20 @@ class MyDrawer extends StatelessWidget {
         children: [
           Column(
             children: [
-              DrawerHeader(
-                child: Center(
-                  child: Icon(
-                    Icons.shopping_cart_outlined,
-                    size: 72,
-                    color: Theme.of(context).colorScheme.inversePrimary,
-                  ),
+              Container(
+                decoration: BoxDecoration(
+                  border: null,
                 ),
-                decoration: BoxDecoration(color: Colors.transparent),
+                child: DrawerHeader(
+                  child: Center(
+                    child: Icon(
+                      Icons.shopping_cart_outlined,
+                      size: 72,
+                      color: Theme.of(context).colorScheme.inversePrimary,
+                    ),
+                  ),
+                  decoration: BoxDecoration(color: Colors.transparent),
+                ),
               ),
               const SizedBox(
                 height: 25,

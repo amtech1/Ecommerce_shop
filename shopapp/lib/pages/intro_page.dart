@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopapp/components/my_button.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -31,6 +32,10 @@ class IntroPage extends StatelessWidget {
               style: TextStyle(
                   color: Theme.of(context).colorScheme.inversePrimary),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            MyButton(onTap: () {}, child: Icon(Icons.arrow_forward))
           ],
         ),
       ),

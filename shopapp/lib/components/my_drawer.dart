@@ -9,18 +9,19 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.background,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               DrawerHeader(
                 child: Center(
                   child: Icon(
-                    Icons.shopping_cart,
+                    Icons.shopping_cart_outlined,
                     size: 72,
                     color: Theme.of(context).colorScheme.inversePrimary,
                   ),
                 ),
+                decoration: BoxDecoration(color: Colors.transparent),
               ),
               const SizedBox(
                 height: 25,
